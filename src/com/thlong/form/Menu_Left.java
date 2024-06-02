@@ -100,13 +100,13 @@ public class Menu_Left extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         menu = new javax.swing.JLayeredPane();
         menuMessage = new com.thlong.component.MenuButton();
         menuCloud = new com.thlong.component.MenuButton();
-        menuBox = new com.thlong.component.MenuButton();
+        menuSetting = new com.thlong.component.MenuButton();
         sp = new javax.swing.JScrollPane();
         menuList = new javax.swing.JLayeredPane();
 
@@ -134,15 +134,15 @@ public class Menu_Left extends javax.swing.JPanel {
         });
         menu.add(menuCloud);
 
-        menuBox.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/thlong/icon/setting.png"))); // NOI18N
-        menuBox.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/com/thlong/icon/setting_selected.png"))); // NOI18N
-        menuBox.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/com/thlong/icon/setting.png"))); // NOI18N
-        menuBox.addActionListener(new java.awt.event.ActionListener() {
+        menuSetting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/thlong/icon/setting.png"))); // NOI18N
+        menuSetting.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/com/thlong/icon/setting_selected.png"))); // NOI18N
+        menuSetting.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/com/thlong/icon/setting.png"))); // NOI18N
+        menuSetting.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBoxActionPerformed(evt);
+                menuSettingActionPerformed(evt);
             }
         });
-        menu.add(menuBox);
+        menu.add(menuSetting);
 
         sp.setBackground(new java.awt.Color(242, 242, 242));
         sp.setBorder(null);
@@ -182,40 +182,40 @@ public class Menu_Left extends javax.swing.JPanel {
                 .addComponent(sp)
                 .addContainerGap())
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void menuMessageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuMessageActionPerformed
+    private void menuMessageActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (!menuMessage.isSelected()) {
             menuMessage.setSelected(true);
             menuCloud.setSelected(false);
-            menuBox.setSelected(false);
+            menuSetting.setSelected(false);
             showMessage();
         }
-    }//GEN-LAST:event_menuMessageActionPerformed
+    }                                           
 
-    private void menuCloudActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCloudActionPerformed
+    private void menuCloudActionPerformed(java.awt.event.ActionEvent evt) {                                          
         if (!menuCloud.isSelected()) {
             menuMessage.setSelected(false);
             menuCloud.setSelected(true);
-            menuBox.setSelected(false);
+            menuSetting.setSelected(false);
         }
-    }//GEN-LAST:event_menuCloudActionPerformed
+    }                                         
 
-    private void menuBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBoxActionPerformed
-        if (!menuBox.isSelected()) {
+    private void menuSettingActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        if (!menuSetting.isSelected()) {
             menuMessage.setSelected(false);
             menuCloud.setSelected(false);
-            menuBox.setSelected(true);
+            menuSetting.setSelected(true);
             showBox();
         }
-    }//GEN-LAST:event_menuBoxActionPerformed
+    }                                           
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JLayeredPane menu;
-    private com.thlong.component.MenuButton menuBox;
     private com.thlong.component.MenuButton menuCloud;
     private javax.swing.JLayeredPane menuList;
     private com.thlong.component.MenuButton menuMessage;
+    private com.thlong.component.MenuButton menuSetting;
     private javax.swing.JScrollPane sp;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
